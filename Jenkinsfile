@@ -1,10 +1,10 @@
 pipeline{
     agent any
     stages{
-        stage('sonar qulity status'){
+        stage('sonar quality status'){
             agent{
                 docker{
-                    image 'maven'
+                    image 'maven:3.3.3'
                 }
             }
 
